@@ -1,0 +1,101 @@
+.header__logo {
+  text-align: left;
+  padding: 48px 0 0 5px;
+  float: left;
+  width: 20%;
+}
+
+.header__menu {
+  padding: 0;
+  padding-top: 50px;
+  padding-left: 5px;
+  margin: 0;
+  overflow: auto;
+  border-radius: 0;
+  width: 79%;
+  box-sizing: border-box;
+}
+
+.header__menu_item {
+  float: left;
+  display: inline;
+  border-radius: 0;
+}
+
+.header__menu_link {
+  border: none;
+  padding: 0;
+}
+
+.submenu {
+  display: inline;
+  position: static;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: none;
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 550px;
+}
+
+.submenu__item {
+  border: none;
+  display: inline-block;
+  padding: 0 25px 0 0;
+}
+
+.slider {
+  margin-top: 140px;
+  background: rgba(71, 57, 77, 0.3);
+  clear: both;
+}
+
+.slider__phone {
+  display: block;
+  transform: scale(1.4);
+  top: 250px;
+}
+
+.slider__navigation {
+  margin: 5% auto 0%;
+}
+
+.slider__heading, .slider__heading_small {
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 94px;
+}
+
+.slider__heading_small {
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.slider__text {
+  display: block;
+}
+
+.footer-submenu {
+  width: 100%;
+  overflow: auto;
+}
+
+.footer-submenu__item {
+  display: inline;
+  text-transform: uppercase;
+  border-bottom: none;
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.blog {
+  float: left;
+  width: 50%;
+}
+
+.updates {
+  width: 50%;
+  padding: 87px 0 148px 0;
+}

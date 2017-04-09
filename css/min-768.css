@@ -1,0 +1,134 @@
+.menu {
+  padding-bottom: 0;
+  display: none;
+}
+
+.menu-footer {
+  display: inline;
+  margin: 0;
+  float: left;
+  text-align: left;
+  z-index: 1;
+}
+
+.submenu {
+  display: none;
+}
+
+.slider {
+  background: rgba(71, 57, 77, 0.3);
+}
+
+.slider__phone {
+  display: block;
+  top: 24%;
+  right: 10%;
+  transform: scale(1.4);
+}
+
+.slider__navigation {
+  margin: 5% 0% 0% 70%;
+  padding-bottom: 15%;
+}
+
+.slider__heading {
+  text-align: left;
+  padding-top: 116px;
+  padding-left: 40px;
+  font-size: 48px;
+}
+
+.slider__heading_small {
+  padding-bottom: 0;
+  padding-left: 40px;
+  text-align: left;
+  font-size: 25px;
+}
+
+.slider__text {
+  display: block;
+}
+
+.content__article {
+  width: 30%;
+  float: left;
+  margin: 0 1%;
+  padding: 60px 0;
+}
+
+.content__article:first-child {
+  padding-top: 60px;
+}
+
+.content__article:last-child {
+  padding-bottom: 60px;
+}
+
+.blog {
+  float: left;
+  width: 50%;
+}
+
+.updates {
+  width: 50%;
+  padding: 87px 0 148px 0;
+}
+
+.updates .updates__block {
+  margin-top: 40px;
+}
+
+.sponsors ul.sponsors li {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.sponsors ul.sponsors li.sponsor_1 {
+  width: 20%;
+  background: url(../img/sponsors_sprite.png) 56px 0 no-repeat;
+}
+
+.sponsors ul.sponsors li.sponsor_2 {
+  width: 20%;
+  background: url(../img/sponsors_sprite.png) -73px 0 no-repeat;
+}
+
+.sponsors ul.sponsors li.sponsor_3 {
+  width: 20%;
+  background: url(../img/sponsors_sprite.png) -199px 0 no-repeat;
+}
+
+.sponsors ul.sponsors li.sponsor_4 {
+  width: 20%;
+  background: url(../img/sponsors_sprite.png) -318px 0 no-repeat;
+}
+
+.sponsors ul.sponsors li.sponsor_5 {
+  width: 20%;
+  margin-left: 70px;
+  margin-right: 0;
+  background: url(../img/sponsors_sprite.png) -440px 0 no-repeat;
+}
+
+.sponsors ul.sponsors li.sponsor_6 {
+  width: 20%;
+  background: url(../img/sponsors_sprite.png) -560px 0 no-repeat;
+}
+
+.news {
+  display: block;
+  overflow: auto;
+}
+
+.news article {
+  width: 33%;
+  box-sizing: border-box;
+  float: left;
+  padding-top: 77px;
+}
+
+footer h5 {
+  padding-top: 100px;
+  padding-right: 20px;
+  text-align: right;
+}

@@ -1,0 +1,89 @@
+@mixin font ($family, $size, $color:#fff) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
+
+//---------------------------OLD CSS RULES------------------//
+
+
+
+
+.menu {
+  padding-bottom: 0;
+  &-footer {
+    display: none;
+  }
+  &_linear {
+    display: block;
+  }
+}
+
+.slider {
+  margin-top: 20px;
+  background: rgba(71, 57, 77, .3);
+  &__phone {
+    display: block;
+  }
+  &__navigation {
+    margin: 5% auto 0%;
+  }
+  &__heading {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 94px;
+    &_small {
+      @extend .slider__heading;
+      padding-top: 0;
+      padding-bottom: 94px;
+    }
+  }
+}
+
+.blog {
+  .blog_post {
+    width: 418px;
+  }
+  .post-slider {
+    img {
+      margin: 21px auto;
+    }
+  }
+}
+
+.updates {
+  padding: 48px 80px 148px 80px
+}
+
+.sponsors {
+  ul.sponsors {
+    li.sponsor_1 {
+      width: 30%;
+      background: url(../img/sponsors_sprite.png) 20px 0 no-repeat;
+    }
+    li.sponsor_2 {
+      width: 30%;
+      background: url(../img/sponsors_sprite.png) -100px 0 no-repeat;
+    }
+    li.sponsor_3 {
+      width: 30%;
+      background: url(../img/sponsors_sprite.png) -200px 0 no-repeat;
+    }
+    li.sponsor_4 {
+      width: 30%;
+      background: url(../img/sponsors_sprite.png) -340px 0 no-repeat;
+    }
+    li.sponsor_5 {
+      width: 30%;
+      background: url(../img/sponsors_sprite.png) -445px 0 no-repeat;
+    }
+    li.sponsor_6 {
+      width: 40%;
+      background: url(../img/sponsors_sprite.png) -560px 0 no-repeat;
+    }
+  }
+}
+
+.news {
+  display: block;
+}
