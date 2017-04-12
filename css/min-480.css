@@ -2,16 +2,33 @@
   padding-bottom: 0;
 }
 
-.menu-footer {
-  display: none;
+.menu--footer {
+  display: inline;
+  width: 70%;
+  background: none;
 }
 
-.menu_linear {
-  display: block;
+.menu--footer .menu__item {
+  visibility: visible;
+  display: inline;
+  padding-right: 2%;
+}
+
+.menu--footer .menu__item:hover {
+  background: none;
+  border-bottom: none;
+}
+
+.menu--footer .menu__link {
+  border-bottom: none;
+}
+
+.menu--footer .menu__link--home {
+  text-shadow: 2px 2px #787878;
 }
 
 .slider {
-  margin-top: 20px;
+  margin-top: -225px;
   background: rgba(71, 57, 77, 0.3);
 }
 
@@ -23,15 +40,15 @@
   margin: 5% auto 0%;
 }
 
-.slider__heading, .slider__heading_small {
+.slider__heading, .slider__heading--small {
   text-align: left;
   padding-left: 40px;
-  padding-top: 94px;
+  padding-top: 90px;
 }
 
-.slider__heading_small {
+.slider__heading--small {
   padding-top: 0;
-  padding-bottom: 94px;
+  padding-bottom: 90px;
 }
 
 .blog .blog_post {
@@ -46,36 +63,39 @@
   padding: 48px 80px 148px 80px;
 }
 
-.sponsors ul.sponsors li.sponsor_1 {
-  width: 30%;
-  background: url(../img/sponsors_sprite.png) 20px 0 no-repeat;
+.sponsors__item {
+  width: 33%;
 }
 
-.sponsors ul.sponsors li.sponsor_2 {
-  width: 30%;
-  background: url(../img/sponsors_sprite.png) -100px 0 no-repeat;
+.sponsors__item--1 {
+  background: url(../img/sprite-sponsors.png) 0 -305px no-repeat;
 }
 
-.sponsors ul.sponsors li.sponsor_3 {
-  width: 30%;
-  background: url(../img/sponsors_sprite.png) -200px 0 no-repeat;
+.sponsors__item--2 {
+  background: url(../img/sprite-sponsors.png) 0 -129px no-repeat;
 }
 
-.sponsors ul.sponsors li.sponsor_4 {
-  width: 30%;
-  background: url(../img/sponsors_sprite.png) -340px 0 no-repeat;
+.sponsors__item--3 {
+  background: url(../img/sprite-sponsors.png) 0 -390px no-repeat;
 }
 
-.sponsors ul.sponsors li.sponsor_5 {
-  width: 30%;
-  background: url(../img/sponsors_sprite.png) -445px 0 no-repeat;
+.sponsors__item--4 {
+  background: url(../img/sprite-sponsors.png) 0 -215px no-repeat;
 }
 
-.sponsors ul.sponsors li.sponsor_6 {
-  width: 40%;
-  background: url(../img/sponsors_sprite.png) -560px 0 no-repeat;
+.sponsors__item--5 {
+  background: url(../img/sprite-sponsors.png) -23px 42px no-repeat;
+}
+
+.sponsors__item--6 {
+  background: url(../img/sprite-sponsors.png) 0 -45px no-repeat;
 }
 
 .news {
   display: block;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-left: 20px;
 }

@@ -4,23 +4,32 @@
   color: $color;
 }
 
-//---------------------------OLD CSS RULES------------------//
-
-
-
-
 .menu {
   padding-bottom: 0;
-  &-footer {
-    display: none;
-  }
-  &_linear {
-    display: block;
+  &--footer {
+    display: inline;
+    width: 70%;
+    background: none;
+    .menu__item {
+      visibility: visible;
+      display: inline;
+      padding-right: 2%;
+      &:hover {
+        background: none;
+        border-bottom: none;
+      }
+    }
+    .menu__link {
+      border-bottom: none;
+      &--home {
+        text-shadow: 2px 2px #787878;
+      }
+    }
   }
 }
 
 .slider {
-  margin-top: 20px;
+  margin-top: -225px;
   background: rgba(71, 57, 77, .3);
   &__phone {
     display: block;
@@ -31,11 +40,11 @@
   &__heading {
     text-align: left;
     padding-left: 40px;
-    padding-top: 94px;
-    &_small {
+    padding-top: 90px;
+    &--small {
       @extend .slider__heading;
       padding-top: 0;
-      padding-bottom: 94px;
+      padding-bottom: 90px;
     }
   }
 }
@@ -56,34 +65,34 @@
 }
 
 .sponsors {
-  ul.sponsors {
-    li.sponsor_1 {
-      width: 30%;
-      background: url(../img/sponsors_sprite.png) 20px 0 no-repeat;
+  &__item {
+    width: 33%;
+    &--1 {
+      background: url(../img/sprite-sponsors.png) 0 -305px no-repeat;
     }
-    li.sponsor_2 {
-      width: 30%;
-      background: url(../img/sponsors_sprite.png) -100px 0 no-repeat;
+    &--2 {
+      background: url(../img/sprite-sponsors.png) 0 -129px no-repeat;
     }
-    li.sponsor_3 {
-      width: 30%;
-      background: url(../img/sponsors_sprite.png) -200px 0 no-repeat;
+    &--3 {
+      background: url(../img/sprite-sponsors.png) 0 -390px no-repeat;
     }
-    li.sponsor_4 {
-      width: 30%;
-      background: url(../img/sponsors_sprite.png) -340px 0 no-repeat;
+    &--4 {
+      background: url(../img/sprite-sponsors.png) 0 -215px no-repeat;
     }
-    li.sponsor_5 {
-      width: 30%;
-      background: url(../img/sponsors_sprite.png) -445px 0 no-repeat;
+    &--5 {
+      background: url(../img/sprite-sponsors.png) -23px 42px no-repeat;
     }
-    li.sponsor_6 {
-      width: 40%;
-      background: url(../img/sponsors_sprite.png) -560px 0 no-repeat;
+    &--6 {
+      background: url(../img/sprite-sponsors.png) 0 -45px no-repeat;
     }
   }
 }
 
 .news {
   display: block;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-left: 20px;
 }

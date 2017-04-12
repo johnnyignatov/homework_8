@@ -14,29 +14,18 @@
   <body>
     <div class="wrapper">
       <header class="header">
-          <div class="header__logo"><a href="#" class="header__link">pingbull<span class="header__logo_purple">er</span></a></div>
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="">home</a>
-              <ul class="submenu">
-                <li class="submenu__item"><a class="submenu__link"href="">about</a></li>
-                <li class="submenu__item"><a class="submenu__link"href="">blog</a></li>
-                <li class="submenu__item"><a class="submenu__link"href="">products</a></li>
-                <li class="submenu__item"><a class="submenu__link"href="">lorem ipsum</a></li>
-                <li class="submenu__item"><a class="submenu__link"href="">dolor sit amet</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="menu-footer">
-            <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">home</a></li>
-            <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">about</a></li>
-            <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">blog</a></li>
-            <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">products</a></li>
-            <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">lorem ipsum</a></li>
-            <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">dolor sit amet</a></li>
+          <div class="header__logo"><a href="#" class="header__link">pingbull<span class="header__logo--purple">er</span></a></div>
+          <ul class="menu menu--inline">
+            <li class="menu__item menu__item--visible"><a class="menu__link menu__link--home" href="">home</a></li>
+            <li class="menu__item"><a class="menu__link"href="">about</a></li>
+            <li class="menu__item"><a class="menu__link"href="">blog</a></li>
+            <li class="menu__item"><a class="menu__link"href="">products</a></li>
+            <li class="menu__item"><a class="menu__link"href="">lorem ipsum</a></li>
+            <li class="menu__item"><a class="menu__link"href="">dolor sit amet</a></li>
           </ul>
         <div class="slider">
           <h2 class="slider__heading">Lorem ipsum dolor</h2>
-          <h3 class="slider__heading_small">IT WILL MAKE ALL OF YOUR DREAMS COME</h3>
+          <h3 class="slider__heading--small">IT WILL MAKE ALL OF YOUR DREAMS COME</h3>
           <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, earum impedit. Animi, tempora non beatae!</p>
           <img class="slider__phone" src="img/header-phone.png" alt="">
         </div>
@@ -64,69 +53,65 @@
           <div class="blog__name">
             <img class="blog__logo" src="img/account_img.png" alt="">
             <h1 class="blog__heading">pingbuller</h1>
-            <h2 class="blog__heading_small">starts here</h2>
+            <h2 class="blog__heading--small">starts here</h2>
           </div>
           <div class="blog__text">
             <p>“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae</p>
           </div>
         </div>
-        <div class="post-slider">
-          <img src="img/post_slider.png" alt="">
-        </div>
+        <img class="blog__slider" src="img/post_slider.png" alt="">
       </div>
       <div class="updates">
-        <h1>recent updates</h1>
-        <div class="updates__block">
-          <img src="img/update-img.png" alt="">
-          <h2>Nunc turpis neque</h2>
-          <h3>Posted by Admin on March 13</h3>
+        <h1 class="updates__title">recent updates</h1>
+        <div class="updates-block">
+          <img class="updates-block__logo" src="img/update-img.png" alt="">
+          <h2 class="updates-block__title">Nunc turpis neque</h2>
+          <h3 class="updates-block__title--small">Posted by Admin on March 13</h3>
         </div>
-        <div class="updates__block">
-          <img src="img/update-img.png" alt="">
-          <h2>Nunc turpis neque</h2>
-          <h3>Posted by Admin on March 13</h3>
+        <div class="updates-block">
+          <img class="updates-block__logo" src="img/update-img.png" alt="">
+          <h2 class="updates-block__title">Nunc turpis neque</h2>
+          <h3 class="updates-block__title--small">Posted by Admin on March 13</h3>
         </div>
-        <div class="updates__block">
-          <img src="img/update-img.png" alt="">
-          <h2>Nunc turpis neque</h2>
-          <h3>Posted by Admin on March 13</h3>
+        <div class="updates-block">
+          <img class="updates-block__logo" src="img/update-img.png" alt="">
+          <h2 class="updates-block__title">Nunc turpis neque</h2>
+          <h3 class="updates-block__title--small">Posted by Admin on March 13</h3>
         </div>
-        <span class="more">more blog posts</span>
+        <span class="updates__more">more blog posts</span>
       </div>
-      <div class="sponsors">
-        <ul class="sponsors">
-          <li class="sponsor_1"><a href=""></a></li>
-          <li class="sponsor_2"><a href=""></a></li>
-          <li class="sponsor_3"><a href=""></a></li>
-          <li class="sponsor_4"><a href=""></a></li>
-          <li class="sponsor_5"><a href=""></a></li>
-          <li class="sponsor_6"><a href=""></a></li>
-        </ul>
-      </div>
+      <ul class="sponsors">
+        <li class="sponsors__item sponsors__item--1"><a href=""></a></li>
+        <li class="sponsors__item sponsors__item--2"><a href=""></a></li>
+        <li class="sponsors__item sponsors__item--3"><a href=""></a></li>
+        <li class="sponsors__item sponsors__item--4"><a href=""></a></li>
+        <li class="sponsors__item sponsors__item--5"><a href=""></a></li>
+        <li class="sponsors__item sponsors__item--6"><a href=""></a></li>
+      </ul>
       <div class="news">
-        <article>
-          <h1>news categories</h1>
-          <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben...</p>
+        <article class="news__article">
+          <h1 class="news__title">news categories</h1>
+          <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben...</p>
         </article>
-        <article>
-          <h1>news categories</h1>
-          <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben...</p>
+        <article class="news__article">
+          <h1 class="news__title">news categories</h1>
+          <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben...</p>
         </article>
-        <article>
-          <h1>news categories</h1>
-          <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben...</p>
+        <article class="news__article">
+          <h1 class="news__title">news categories</h1>
+          <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar biben...</p>
         </article>
       </div>
-      <footer>
-        <ul class="menu-footer">
-          <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">home</a></li>
-          <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">about</a></li>
-          <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">blog</a></li>
-          <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">products</a></li>
-          <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">lorem ipsum</a></li>
-          <li class="menu__item menu-footer__item"><a class="menu__link menu-footer__link"href="">dolor sit amet</a></li>
+      <footer class="footer">
+        <ul class="menu menu--inline menu--footer">
+          <li class="menu__item menu__item--visible"><a class="menu__link menu__link--home" href="">home</a></li>
+          <li class="menu__item"><a class="menu__link"href="">about</a></li>
+          <li class="menu__item"><a class="menu__link"href="">blog</a></li>
+          <li class="menu__item"><a class="menu__link"href="">products</a></li>
+          <li class="menu__item"><a class="menu__link"href="">lorem ipsum</a></li>
+          <li class="menu__item"><a class="menu__link"href="">dolor sit amet</a></li>
         </ul>
-        <h5>Designed by <span>Pingbull AS</span></h5>
+        <h5 class="copyright">Designed by <span>Pingbull AS</span></h5>
       </footer>
     </div>
   </body>

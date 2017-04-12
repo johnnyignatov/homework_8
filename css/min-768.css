@@ -4,20 +4,38 @@
 }
 
 .menu {
+  visibility: visible;
   padding-bottom: 0;
-  display: none;
+  display: block;
+  background: none;
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.menu__link--home {
+  border-bottom: none;
+  text-shadow: 2px 2px #787878;
+}
+
+.menu--inline .menu__item {
+  visibility: visible;
+  display: inline;
+  padding-right: 50px;
+}
+
+.menu--footer {
+  width: 70%;
+  float: left;
+}
+
+.menu--footer .menu__item {
+  padding-right: 20px;
 }
 
 .menu__item:hover {
   background: none;
-}
-
-.menu-footer {
-  display: inline;
-  margin: 0;
-  float: left;
-  text-align: left;
-  z-index: 1;
+  border-bottom: none;
 }
 
 .slider {
@@ -27,7 +45,7 @@
 
 .slider__phone {
   display: block;
-  top: 51%;
+  top: 58%;
   right: 10%;
   transform: scale(1.4);
 }
@@ -44,7 +62,7 @@
   font-size: 48px;
 }
 
-.slider__heading_small {
+.slider__heading--small {
   padding-bottom: 0;
   padding-left: 40px;
   text-align: left;
@@ -84,45 +102,9 @@
   margin-top: 40px;
 }
 
-.sponsors ul.sponsors {
+.sponsors__item {
   padding: 0;
-}
-
-.sponsors ul.sponsors li {
-  /*margin-right: 40px;*/
-  /*margin-left: 40px;*/
-}
-
-.sponsors ul.sponsors li.sponsor_1 {
   width: 16%;
-  background: url(../img/sponsors_sprite.png) 56px 0 no-repeat;
-}
-
-.sponsors ul.sponsors li.sponsor_2 {
-  width: 16%;
-  background: url(../img/sponsors_sprite.png) -73px 0 no-repeat;
-}
-
-.sponsors ul.sponsors li.sponsor_3 {
-  width: 16%;
-  background: url(../img/sponsors_sprite.png) -199px 0 no-repeat;
-}
-
-.sponsors ul.sponsors li.sponsor_4 {
-  width: 16%;
-  background: url(../img/sponsors_sprite.png) -318px 0 no-repeat;
-}
-
-.sponsors ul.sponsors li.sponsor_5 {
-  width: 16%;
-  /*margin-left: 70px;*/
-  margin-right: 0;
-  background: url(../img/sponsors_sprite.png) -440px 0 no-repeat;
-}
-
-.sponsors ul.sponsors li.sponsor_6 {
-  width: 16%;
-  background: url(../img/sponsors_sprite.png) -560px 0 no-repeat;
 }
 
 .news {
@@ -137,8 +119,12 @@
   padding-top: 77px;
 }
 
-footer h5 {
-  padding-top: 100px;
+.footer {
+  padding-top: 50px;
+}
+
+.footer .copyright {
+  padding-top: 50px;
   padding-right: 20px;
   text-align: right;
 }

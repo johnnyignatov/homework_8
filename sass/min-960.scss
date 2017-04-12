@@ -13,19 +13,38 @@
 
 
 .menu {
+  visibility: visible;
   padding-bottom: 0;
-  display: none;
+  padding-top: 60px;
+  display: block;
+  background: none;
+  width: 100%;
+  text-align: center;
+  margin-left: 10px;
+  &__link {
+    &--home {
+      border-bottom: none;
+      text-shadow: 2px 2px #787878;
+    }
+  }
+  &--inline {
+    .menu__item {
+      visibility: visible;
+      display: inline;
+      padding-right: 50px;
+    }
+  }
   &__item:hover {
     background: none;
+    border-bottom: none;
   }
-  &-footer {
-    display: inline;
+  &--footer {
     width: 70%;
-    margin: 20px 0 0 80px;
-    /*padding-left: 20px;*/
-    float: left;
+    padding: 50px 0 0 0;
     text-align: left;
-    z-index: 1;
+    & .menu__item {
+      padding: 0 10px 0 0;
+    }
   }
 }
 
@@ -34,8 +53,7 @@
   margin-top: 150px;
   &__phone {
     display: block;
-    top: 33%;
-    // left: 65%;
+    top: 57%;
     right: 10%;
     transform: scale(1.4);
   }
@@ -48,7 +66,7 @@
     padding-top: 116px;
     padding-left: 40px;
     font-size: 48px;
-    &_small {
+    &--small {
       padding-bottom: 0;
       padding-left: 40px;
       text-align: left;
@@ -91,39 +109,10 @@
 }
 
 .sponsors {
-  ul.sponsors {
+  &__item {
     padding: 0;
-    li {
-      /*margin-right: 40px;*/
-      /*margin-left: 40px;*/
-    }
-    li.sponsor_1 {
-      width: 16%;
-    	background: url(../img/sponsors_sprite.png) 56px 0 no-repeat;
-    }
-    li.sponsor_2 {
-      width: 16%;
-    	background: url(../img/sponsors_sprite.png) -73px 0 no-repeat;
-    }
-    li.sponsor_3 {
-      width: 16%;
-    	background: url(../img/sponsors_sprite.png) -199px 0 no-repeat;
-    }
-    li.sponsor_4 {
-      width: 16%;
-    	background: url(../img/sponsors_sprite.png) -318px 0 no-repeat;
-    }
-    li.sponsor_5 {
-      width: 16%;
-      /*margin-left: 70px;*/
-      margin-right: 0;
-    	background: url(../img/sponsors_sprite.png) -440px 0 no-repeat;
-    }
-    li.sponsor_6 {
-      width: 16%;
-    	background: url(../img/sponsors_sprite.png) -560px 0 no-repeat;
-    }
-  }
+    width: 16%;
+ }
 }
 
 .news {
