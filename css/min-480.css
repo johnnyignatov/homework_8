@@ -51,16 +51,12 @@
   padding-bottom: 90px;
 }
 
-.blog .blog_post {
-  width: 418px;
+.blog__post {
+  width: 88%;
 }
 
-.blog .post-slider img {
+.blog__slider img {
   margin: 21px auto;
-}
-
-.updates {
-  padding: 48px 80px 148px 80px;
 }
 
 .sponsors__item {

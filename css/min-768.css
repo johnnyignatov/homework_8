@@ -1,6 +1,6 @@
 .header__logo {
   text-align: left;
-  padding: 48px 10px 0;
+  padding: 48px 10px 40px;
 }
 
 .menu {
@@ -13,9 +13,8 @@
   padding-left: 10px;
 }
 
-.menu__link--home {
-  border-bottom: none;
-  text-shadow: 2px 2px #787878;
+.menu__link:hover {
+  border-bottom: 2px solid #edbfff;
 }
 
 .menu--inline .menu__item {
@@ -45,7 +44,7 @@
 
 .slider__phone {
   display: block;
-  top: 58%;
+  top: 60%;
   right: 10%;
   transform: scale(1.4);
 }

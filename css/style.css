@@ -69,12 +69,11 @@ body {
   color: #fff;
   text-decoration: none;
   border-width: 5px;
-  text-shadow: 2px 2px #787878;
+  text-shadow: 2px 2px rgba(153, 137, 137, 0.72);
 }
 
 .menu__link--home {
   border-bottom: 2px solid #edbfff;
-  text-shadow: 0 0 5px #fff;
 }
 
 .menu__item {
@@ -145,7 +144,7 @@ body {
   display: none;
   position: absolute;
   right: 5%;
-  top: 32%;
+  top: 29%;
 }
 
 .slider__navigation {
@@ -218,7 +217,7 @@ body {
 
 .blog__post {
   position: relative;
-  width: 256px;
+  width: 75%;
   margin: 70px auto 21px;
   background: #fff;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
@@ -262,7 +261,9 @@ body {
 }
 
 .updates {
-  padding: 48px 20px 148px 20px;
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 100px;
   overflow: hidden;
 }
 
@@ -308,7 +309,8 @@ body {
 
 .sponsors {
   overflow: auto;
-  padding: 0 45px;
+  padding: 50px 45px;
+  border-top: 1px solid rgba(206, 206, 206, 0.7);
 }
 
 .sponsors__item {

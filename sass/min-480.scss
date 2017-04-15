@@ -50,18 +50,14 @@
 }
 
 .blog {
-  .blog_post {
-    width: 418px;
+  &__post {
+    width: 88%;
   }
-  .post-slider {
+  &__slider {
     img {
       margin: 21px auto;
     }
   }
-}
-
-.updates {
-  padding: 48px 80px 148px 80px
 }
 
 .sponsors {
