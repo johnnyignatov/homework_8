@@ -51,13 +51,13 @@
 
 .slider__phone {
   display: block;
-  top: 48%;
+  top: 40%;
   right: 10%;
   transform: scale(1.4);
 }
 
 .slider__navigation {
-  margin: 5% 0% 0% 77%;
+  margin: 5% 0 0 77%;
   padding-bottom: 15%;
 }
 

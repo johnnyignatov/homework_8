@@ -44,13 +44,13 @@
 
 .slider__phone {
   display: block;
-  top: 60%;
+  top: 55%;
   right: 10%;
   transform: scale(1.4);
 }
 
 .slider__navigation {
-  margin: 5% 0% 0% 70%;
+  margin: 5% 0 0 70%;
   padding-bottom: 15%;
 }
 

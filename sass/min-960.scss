@@ -4,13 +4,11 @@
   color: $color;
 }
 
-
 .header__logo {
   text-align: left;
   padding: 48px 10px 0;
   float: left;
 }
-
 
 .menu {
   visibility: visible;
@@ -24,7 +22,6 @@
   &__link {
     &:hover {
       border-bottom: 2px solid #edbfff;
-
     }
     &--home {
       border-bottom: 2px solid #edbfff;
@@ -56,12 +53,12 @@
   margin-top: 150px;
   &__phone {
     display: block;
-    top: 48%;
+    top: 40%;
     right: 10%;
     transform: scale(1.4);
   }
   &__navigation {
-    margin: 5% 0% 0% 77%;
+    margin: 5% 0 0 77%;
     padding-bottom: 15%;
   }
   &__heading {
@@ -96,7 +93,6 @@
     }
   }
 }
-
 
 .blog {
   float: left;

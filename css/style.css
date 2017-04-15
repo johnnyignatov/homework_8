@@ -21,12 +21,12 @@ body {
 }
 
 .header__logo {
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 48px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
   padding: 48px 54px 0;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .menu__link {
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 24px;
   color: #fff;
   text-decoration: none;
@@ -117,14 +117,14 @@ body {
 
 .slider__heading {
   text-align: center;
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 36px;
   color: #fff;
 }
 
 .slider__heading--small {
   text-align: center;
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 18px;
   color: #edbfff;
 }
@@ -135,7 +135,7 @@ body {
   padding-left: 40px;
   padding-bottom: 116px;
   text-align: justify;
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 14px;
   color: #fff;
 }
@@ -144,11 +144,11 @@ body {
   display: none;
   position: absolute;
   right: 5%;
-  top: 29%;
+  top: 27%;
 }
 
 .slider__navigation {
-  margin: 20% auto 0%;
+  margin: 20% auto 0;
   width: 100px;
   display: block;
   padding-bottom: 20%;
@@ -160,7 +160,7 @@ body {
 }
 
 .content__article {
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 24px;
   color: #fff;
   padding-top: 5px;
@@ -189,13 +189,13 @@ body {
 .content__heading {
   font-weight: 400;
   padding-left: 72px;
-  text-shadow: 0px 1px 0px #0f1518;
+  text-shadow: 0 1px 0 #0f1518;
 }
 
 .content__text {
   padding-left: 72px;
   font-weight: 300;
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 16px;
   color: #fff;
 }
@@ -205,8 +205,8 @@ body {
   padding-right: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
-  font-family: "LeagueGothic";
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -220,7 +220,7 @@ body {
   width: 75%;
   margin: 70px auto 21px;
   background: #fff;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .blog__name {
@@ -236,20 +236,20 @@ body {
 }
 
 .blog__heading {
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 24px;
   color: #454545;
 }
 
 .blog__heading--small {
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 24px;
   color: #edbfff;
 }
 
 .blog__text {
   padding: 82px 38px 33px 38px;
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 16px;
   color: #454545;
 }
@@ -269,7 +269,7 @@ body {
 
 .updates__title {
   text-transform: uppercase;
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 30px;
   color: #454545;
 }
@@ -279,7 +279,7 @@ body {
   margin-top: 20px;
   margin-right: 5px;
   text-transform: uppercase;
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 18px;
   color: #454545;
 }
@@ -301,7 +301,7 @@ body {
 }
 
 .updates-block__title--small {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 16px;
   color: #454545;
   font-weight: 300;
@@ -362,14 +362,14 @@ body {
 }
 
 .news__title {
-  font-family: "LeagueGothic";
+  font-family: "LeagueGothic", Arial, sans-serif;
   font-size: 24px;
   color: #454545;
   text-transform: uppercase;
 }
 
 .news__text {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 16px;
   color: #787878;
 }
@@ -381,11 +381,11 @@ body {
 }
 
 .copyright, .copyright span {
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   color: #fff;
   font-weight: 300;
-  text-shadow: 0px 2px 0 #555;
+  text-shadow: 0 2px 0 #555;
   text-align: center;
   padding-right: 2px;
   padding-top: 36px;
