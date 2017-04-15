@@ -44,7 +44,7 @@
 
 .slider__phone {
   display: block;
-  top: 95%;
+  top: 350px;
   right: 10%;
   transform: scale(1.4);
 }
