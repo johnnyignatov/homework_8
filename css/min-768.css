@@ -1,4 +1,12 @@
-.header__logo {
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo {
   text-align: left;
   padding: 48px 10px 40px;
 }
@@ -45,7 +53,7 @@
 .slider__phone {
   display: block;
   top: 350px;
-  right: 10%;
+  right: 80px;
   transform: scale(1.4);
 }
 
@@ -56,8 +64,7 @@
 
 .slider__heading {
   text-align: left;
-  padding-top: 116px;
-  padding-left: 40px;
+  padding: 116px 0 0 40px;
   font-size: 48px;
 }
 
@@ -87,18 +94,24 @@
   padding-bottom: 60px;
 }
 
+.content__text {
+  height: auto;
+  max-height: 135px;
+  overflow: hidden;
+}
+
 .blog {
   float: left;
   width: 50%;
 }
 
 .updates {
-  width: 50%;
-  padding: 87px 0 148px 0;
+  width: 40%;
+  padding: 120px 0 50px 0;
 }
 
-.updates .updates__block {
-  margin-top: 40px;
+.updates-block__text {
+  max-width: 230px;
 }
 
 .sponsors__item {
@@ -113,7 +126,6 @@
 
 .news article {
   width: 33%;
-  box-sizing: border-box;
   float: left;
   padding-top: 77px;
 }

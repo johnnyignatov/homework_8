@@ -1,3 +1,5 @@
+@import "mixin";
+
 html,
 body {
   width: 100%;
@@ -11,34 +13,31 @@ body {
   box-sizing: border-box;
 }
 
-$white: #fff;
-
-@mixin font ($family, $size, $color:$white) {
-  font-family: $family;
-  font-size: $size;
-  color: $color;
-}
-
 .wrapper {
   width: 100%;
 }
 
 .header {
-  background: $white url(../img/Home_320.jpg) 56% no-repeat;
+  background: $white url(../img/Home_320.jpg) 50% no-repeat;
   background-size: cover;
-  &__logo {
-    @include font ('LeagueGothic', 48px, $white);
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    padding: 48px 54px 0;
-    &--purple {
-      color: #5E446B;
-    }
-  }
+}
+
+.logo {
+  @include font ('LeagueGothic', 48px, $white);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+  padding: 48px 54px 0;
   &__link {
-    text-decoration: none;
     color: inherit;
+  }
+  &--purple {
+    text-shadow: none;
+    color: #5E446B;
+  }
+  &--grey {
+    text-shadow: none;
+    color: #B9B9B9;
   }
 }
 
@@ -57,19 +56,11 @@ $white: #fff;
     & .menu__item {
       visibility: visible;
     }
-    & .menu__link--home {
-      border-bottom: none;
-    }
   }
   &__link {
     @include font('LeagueGothic', 24px);
-    text-decoration: none;
     border-width: 5px;
     text-shadow: 2px 2px rgba(153, 137, 137, 0.72);
-    &--home {
-      border-bottom: 2px solid #edbfff;
-      //text-shadow: 0 0 5px $white;
-    }
   }
   &__item {
     visibility: hidden;
@@ -118,9 +109,9 @@ $white: #fff;
   }
   &__text {
     display: none;
-    width: 35%;
-    padding-left: 40px;
-    padding-bottom: 116px;
+    width: 41%;
+    max-width: 320px;
+    padding: 0 0 116px 40px;
     text-align: justify;
     @include font('Open Sans Light', 14px);
   }
@@ -131,9 +122,9 @@ $white: #fff;
     top: 170px;
   }
   &__navigation {
-    margin: 20% auto 0;
-    width: 100px;
     display: block;
+    width: 100px;
+    margin: 20% auto 0;
     padding-bottom: 20%;
   }
 }
@@ -143,9 +134,11 @@ $white: #fff;
 .content {
   overflow: auto;
   background: linear-gradient(to bottom, #745083, #322539);
+  padding: 65px 0;
   &__article {
-    @include font('LeagueGothic', 24px);
     padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
     overflow: auto;
     &::before {
       content: '.';
@@ -155,32 +148,39 @@ $white: #fff;
       display: block;
       width: 30px;
       height: 55px;
-      background: url(../img/article_logo.png) 0 43% no-repeat;
     }
-    &:first-child {
-      padding-top: 65px;
+    &:nth-child(1)::before {
+      background: url(../img/sprite-icons.png) 0 0 no-repeat;
     }
-    &:last-child {
-      padding-bottom: 65px;
+    &:nth-child(2)::before {
+      background: url(../img/sprite-icons.png) 49% 0 no-repeat;
+    }
+    &:nth-child(3)::before {
+      background: url(../img/sprite-icons.png) 95% 0 no-repeat;
     }
   }
   &__heading {
+    @include font('LeagueGothic', 24px);
     font-weight: 400;
     padding-left: 72px;
-    text-shadow: 0 1px 0 #0f1518;
+    text-shadow: 0 1px 20px #0f1518;
   }
   &__text {
-    padding-left: 72px;
-    font-weight: 300;
+    @extend .content__heading;
     @include font('Open Sans Light', 16px);
+    font-weight: 300;
+    height: 113px;
+    width: 100%;
+    overflow: hidden;
   }
   &__link {
     float: right;
-    padding-right: 10px;
-    text-decoration: none;
+    padding-right: 5px;
     text-transform: uppercase;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
     @include font('LeagueGothic', 18px);
+    &:hover {
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
   }
 }
 
@@ -190,8 +190,8 @@ $white: #fff;
   background: #f9f9f9;
   &__post {
     position: relative;
-    width: 75%;
-    margin: 70px auto 21px;
+    width: 80%;
+    margin: 25% 0 0 15%;
     background: $white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
@@ -206,14 +206,15 @@ $white: #fff;
     margin-right: 12px;
   }
   &__heading {
-    @include font('LeagueGothic', 24px, #454545);
-  }
-  &__heading--small {
-    @include font('LeagueGothic', 24px, #edbfff);
+    @include font('LeagueGothic', 24px, $title);
+    text-transform: uppercase;
+    &--small {
+      color: #edbfff;
+    }
   }
   &__text {
     padding: 82px 38px 33px 38px;
-    @include font('Open Sans Light', 16px, #454545);
+    @include font('Open Sans Light', 16px, $title);
   }
   &__slider {
     display: block;
@@ -225,42 +226,47 @@ $white: #fff;
 //------------UPDATES SECTION---------//
 
 .updates {
-  width: 65%;
+  width: 90%;
   margin: 0 auto;
   padding-bottom: 100px;
   overflow: hidden;
   &__title {
     text-transform: uppercase;
-    @include font('LeagueGothic', 30px, #454545);
+    @include font('LeagueGothic', 30px, $title);
   }
   &__more {
     float: right;
-    margin-top: 20px;
-    margin-right: 5px;
+    margin: 20px 20px 0 0;
     text-transform: uppercase;
-    @include font('LeagueGothic', 18px, #454545);
+    @include font('LeagueGothic', 18px, $title);
+    &:hover {
+      text-shadow: 0 0 8px #777;
+    }
   }
 }
 
 .updates-block {
   margin-top: 21px;
+  overflow: auto;
   &__logo {
     float: left;
     margin-right: 17px;
   }
   &__title {
-    @include font('Open Sans Light', 16px, #454545);
-    font-weight: 700;
-    &--small {
-      @include font('Open Sans Light', 16px, #454545);
-      font-weight: 300;
-    }
+    @include font('Open Sans Bold', 16px, $title);
+  }
+  &__text {
+    @include font('Open Sans Light', 14px, $text);
+    max-width: 200px;
+    max-height: 22px;
+    overflow: hidden;
   }
 }
 
 //------------SPONSORS SECTION-----------//
 
 .sponsors {
+  width: 100%;
   overflow: auto;
   padding: 50px 45px;
   border-top: 1px solid rgba(206, 206, 206, 0.7);
@@ -269,9 +275,6 @@ $white: #fff;
     height: 100px;
     float: left;
     list-style: none;
-    a {
-      text-decoration: none;
-    }
     &--1 {
       background: url(../img/sprite-sponsors.png) 0 -305px no-repeat;
     }
@@ -305,11 +308,37 @@ $white: #fff;
     }
   }
   &__title {
-    @include font('LeagueGothic', 24px, #454545);
+    @include font('LeagueGothic', 24px, $title);
     text-transform: uppercase;
     }
   &__text {
-    @include font('Open Sans Light', 16px, #787878);
+    @include font('Open Sans Light', 16px, $text);
+  }
+}
+
+//------------INFO SECTION-----------//
+
+.info {
+  @extend .news;
+  overflow: auto;
+  padding: 10px 5px;
+  &__article {
+    width: 33%;
+    float: left;
+    padding-top: 50px;
+    @extend .news__article;
+    &:first-child {
+      padding-top: 45px;
+    }
+  }
+  &__title {
+    @extend .news__title;
+  }
+  &__text {
+    @extend .news__text;
+  }
+  &__copyright {
+    color: $copyright;
   }
 }
 
@@ -318,15 +347,14 @@ $white: #fff;
 .footer {
   clear: both;
   height: 201px;
-  background: $white url(../img/footer-bg.png) 0 0 no-repeat;
+  background: $white url(../img/footer-bg.png) 51% 0 no-repeat;
 }
 .copyright {
   @include font('Open Sans', 12px);
   font-weight: 300;
   text-shadow: 0 2px 0 #555;
   text-align: center;
-  padding-right: 2px;
-  padding-top: 36px;
+  padding: 36px 2px 0 0;
   span {
     @extend .copyright;
     font-weight: 700;

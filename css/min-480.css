@@ -1,10 +1,18 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .menu {
   padding-bottom: 0;
 }
 
 .menu--footer {
-  display: inline;
-  width: 70%;
+  display: inline-block;
+  width: 100%;
   background: none;
 }
 
@@ -42,8 +50,7 @@
 
 .slider__heading, .slider__heading--small {
   text-align: left;
-  padding-left: 40px;
-  padding-top: 90px;
+  padding: 90px 0 0 40px;
 }
 
 .slider__heading--small {
@@ -51,12 +58,35 @@
   padding-bottom: 90px;
 }
 
-.blog__post {
-  width: 88%;
+.content__text {
+  height: auto;
+  overflow: visible;
 }
 
-.blog__slider img {
+.blog__post {
+  width: 80%;
+}
+
+.blog__slider {
   margin: 21px auto;
+}
+
+.blog__heading {
+  float: left;
+  padding-right: 5px;
+}
+
+.updates {
+  width: 70%;
+}
+
+.updates-block__text {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 14px;
+  color: #454545;
+  max-width: 235px;
+  max-height: 22px;
+  overflow: hidden;
 }
 
 .sponsors__item {
@@ -93,5 +123,5 @@
 
 .footer {
   padding-top: 50px;
-  padding-left: 20px;
+  padding-left: 10px;
 }

@@ -2,7 +2,13 @@
   font-family: 'LeagueGothic';
   src: url(../fonts/LeagueGothic-Regular.otf) format("opentype");
 }
+
 @font-face {
   font-family: 'Open Sans Light';
   src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
 }

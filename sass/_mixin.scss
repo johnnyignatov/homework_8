@@ -1,0 +1,17 @@
+$white: #fff;
+$title: #454545;
+$text: #787878;
+$copyright: #C5C5C5;
+
+@mixin font ($family, $size, $color:$white) {
+  font-family: $family, Arial, sans-serif;
+  font-size: $size;
+  color: $color;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

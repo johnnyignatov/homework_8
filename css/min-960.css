@@ -1,7 +1,25 @@
-.header__logo {
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  background: #fff url(../img/Home_320.jpg) 59% no-repeat;
+  background-size: cover;
+}
+
+.logo {
   text-align: left;
   padding: 48px 10px 0;
   float: left;
+}
+
+.logo--info {
+  padding: 0;
+  float: none;
 }
 
 .menu {
@@ -19,7 +37,7 @@
   border-bottom: 2px solid #edbfff;
 }
 
-.menu__link--home {
+.menu__link--home:hover {
   border-bottom: 2px solid #edbfff;
 }
 
@@ -35,9 +53,10 @@
 }
 
 .menu--footer {
-  width: 70%;
+  width: 65%;
   padding: 50px 0 0 0;
   text-align: left;
+  float: left;
 }
 
 .menu--footer .menu__item {
@@ -47,6 +66,7 @@
 .slider {
   background: rgba(71, 57, 77, 0.3);
   margin-top: 150px;
+  padding-left: 10px;
 }
 
 .slider__phone {
@@ -57,8 +77,8 @@
 }
 
 .slider__navigation {
-  margin: 5% 0 0 77%;
-  padding-bottom: 15%;
+  margin: 10% 0 0 77%;
+  padding-bottom: 5%;
 }
 
 .slider__heading {
@@ -77,6 +97,7 @@
 
 .slider__text {
   display: block;
+  max-width: 500px;
   padding-left: 0;
 }
 
@@ -95,14 +116,24 @@
   padding-bottom: 60px;
 }
 
+.content__text {
+  height: auto;
+  overflow: visible;
+}
+
 .blog {
   float: left;
   width: 50%;
 }
 
+.blog__heading {
+  float: left;
+  padding-right: 5px;
+}
+
 .updates {
-  width: 50%;
-  padding: 87px 0 148px 0;
+  width: 40%;
+  padding: 120px 0 50px 0;
   margin-top: 40px;
 }
 
@@ -110,27 +141,55 @@
   margin-top: 40px;
 }
 
+.updates__more {
+  margin-right: 2%;
+}
+
+.updates-block__text {
+  max-width: 340px;
+}
+
 .sponsors__item {
   padding: 0;
   width: 16%;
 }
 
-.news {
-  display: block;
-  overflow: auto;
+.sponsors__item--1 {
+  background: url(../img/sprite-sponsors.png) 45px -305px no-repeat;
 }
 
-.news__article {
-  width: 33%;
-  box-sizing: border-box;
-  float: left;
-  padding-top: 77px;
+.sponsors__item--2 {
+  background: url(../img/sprite-sponsors.png) 45px -129px no-repeat;
+}
+
+.sponsors__item--3 {
+  background: url(../img/sprite-sponsors.png) 45px -390px no-repeat;
+}
+
+.sponsors__item--4 {
+  background: url(../img/sprite-sponsors.png) 45px -215px no-repeat;
+}
+
+.sponsors__item--5 {
+  background: url(../img/sprite-sponsors.png) 25px 42px no-repeat;
+}
+
+.sponsors__item--6 {
+  background: url(../img/sprite-sponsors.png) 45px -45px no-repeat;
+}
+
+.news {
+  display: none;
+}
+
+.info {
+  display: block;
 }
 
 .copyright {
+  width: 30%;
+  float: right;
   padding-top: 65px;
   padding-right: 80px;
   text-align: right;
-  width: 30%;
-  float: right;
 }

@@ -1,13 +1,18 @@
-@mixin font ($family, $size, $color:#fff) {
-  font-family: $family;
-  font-size: $size;
-  color: $color;
+@import "mixin";
+
+.header {
+  background: #fff url(../img/Home_320.jpg) 59% no-repeat;
+  background-size: cover;
 }
 
-.header__logo {
+.logo {
   text-align: left;
   padding: 48px 10px 0;
   float: left;
+  &--info {
+    padding: 0;
+    float: none;
+  }
 }
 
 .menu {
@@ -23,8 +28,9 @@
     &:hover {
       border-bottom: 2px solid #edbfff;
     }
-    &--home {
+    &--home:hover {
       border-bottom: 2px solid #edbfff;
+
     }
   }
   &--inline {
@@ -39,9 +45,10 @@
     border-bottom: none;
   }
   &--footer {
-    width: 70%;
+    width: 65%;
     padding: 50px 0 0 0;
     text-align: left;
+    float: left;
     & .menu__item {
       padding: 0 10px 0 0;
     }
@@ -51,6 +58,7 @@
 .slider {
   background: rgba(71, 57, 77, .3);
   margin-top: 150px;
+  padding-left: 10px;
   &__phone {
     display: block;
     top: 280px;
@@ -58,8 +66,8 @@
     transform: scale(1.4);
   }
   &__navigation {
-    margin: 5% 0 0 77%;
-    padding-bottom: 15%;
+    margin: 10% 0 0 77%;
+    padding-bottom: 5%;
   }
   &__heading {
     text-align: left;
@@ -75,6 +83,7 @@
   }
   &__text {
     display: block;
+    max-width: 500px;
     padding-left: 0;
   }
 }
@@ -92,44 +101,74 @@
       padding-bottom: 60px;
     }
   }
+  &__text {
+    height: auto;
+    overflow: visible;
+  }
 }
 
 .blog {
   float: left;
   width: 50%;
+  &__heading {
+    float: left;
+    padding-right: 5px;
+  }
 }
 
 .updates {
-  width: 50%;
-  padding: 87px 0 148px 0;
+  width: 40%;
+  padding: 120px 0 50px 0;
   margin-top: 40px;
   &__block {
     margin-top: 40px;
   }
+  &__more {
+    margin-right: 2%;
+  }
+}
+
+.updates-block__text {
+  max-width: 340px;
 }
 
 .sponsors {
   &__item {
     padding: 0;
     width: 16%;
- }
-}
-
-.news {
-  display: block;
-  overflow: auto;
-  &__article {
-    width: 33%;
-    box-sizing: border-box;
-    float: left;
-    padding-top: 77px;
+    &--1 {
+      background: url(../img/sprite-sponsors.png) 45px -305px no-repeat;
+    }
+    &--2 {
+      background: url(../img/sprite-sponsors.png) 45px -129px no-repeat;
+    }
+    &--3 {
+      background: url(../img/sprite-sponsors.png) 45px -390px no-repeat;
+    }
+    &--4 {
+      background: url(../img/sprite-sponsors.png) 45px -215px no-repeat;
+    }
+    &--5 {
+      background: url(../img/sprite-sponsors.png) 25px 42px no-repeat;
+    }
+    &--6 {
+      background: url(../img/sprite-sponsors.png) 45px -45px no-repeat;
+    }
   }
 }
 
+.news {
+  display: none;
+}
+
+.info {
+  display: block;
+}
+
 .copyright {
+  width: 30%;
+  float: right;
   padding-top: 65px;
   padding-right: 80px;
   text-align: right;
-  width: 30%;
-  float: right;
 }
