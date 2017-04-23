@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 48px;
   color: #fff;
   text-align: center;
@@ -72,8 +72,8 @@ body {
   visibility: visible;
 }
 
-.menu__link {
-  font-family: "LeagueGothic", Arial, sans-serif;
+.menu__link, .menu__item--visible {
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 24px;
   color: #fff;
   border-width: 5px;
@@ -121,14 +121,14 @@ body {
 
 .slider__heading {
   text-align: center;
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 36px;
   color: #fff;
 }
 
 .slider__heading--small {
   text-align: center;
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 18px;
   color: #edbfff;
 }
@@ -139,7 +139,7 @@ body {
   max-width: 320px;
   padding: 0 0 116px 40px;
   text-align: justify;
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 14px;
   color: #fff;
 }
@@ -194,7 +194,7 @@ body {
 }
 
 .content__heading, .content__text {
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 24px;
   color: #fff;
   font-weight: 400;
@@ -203,11 +203,11 @@ body {
 }
 
 .content__text {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 16px;
   color: #fff;
   font-weight: 300;
-  height: 113px;
+  height: 114px;
   width: 100%;
   overflow: hidden;
 }
@@ -216,7 +216,7 @@ body {
   float: right;
   padding-right: 5px;
   text-transform: uppercase;
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -250,7 +250,7 @@ body {
 }
 
 .blog__heading {
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 24px;
   color: #454545;
   text-transform: uppercase;
@@ -262,7 +262,7 @@ body {
 
 .blog__text {
   padding: 82px 38px 33px 38px;
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 16px;
   color: #454545;
 }
@@ -274,7 +274,7 @@ body {
 }
 
 .updates {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 100px;
   overflow: hidden;
@@ -282,7 +282,7 @@ body {
 
 .updates__title {
   text-transform: uppercase;
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 30px;
   color: #454545;
 }
@@ -291,7 +291,7 @@ body {
   float: right;
   margin: 20px 20px 0 0;
   text-transform: uppercase;
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 18px;
   color: #454545;
 }
@@ -311,17 +311,17 @@ body {
 }
 
 .updates-block__title {
-  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-family: "OpenSansExtraBold", Arial, sans-serif;
   font-size: 16px;
   color: #454545;
 }
 
 .updates-block__text {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 14px;
   color: #787878;
   max-width: 200px;
-  max-height: 22px;
+  max-height: 18px;
   overflow: hidden;
 }
 
@@ -377,14 +377,14 @@ body {
 }
 
 .news__title, .info__title {
-  font-family: "LeagueGothic", Arial, sans-serif;
+  font-family: "LeagueGothicRegular", Arial, sans-serif;
   font-size: 24px;
   color: #454545;
   text-transform: uppercase;
 }
 
 .news__text, .info__text {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 16px;
   color: #787878;
 }

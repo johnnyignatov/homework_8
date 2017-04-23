@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-  @include font ('LeagueGothic', 48px, $white);
+  @include font ('LeagueGothicRegular', 48px, $white);
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
@@ -58,7 +58,7 @@ body {
     }
   }
   &__link {
-    @include font('LeagueGothic', 24px);
+    @include font('LeagueGothicRegular', 24px);
     border-width: 5px;
     text-shadow: 2px 2px rgba(153, 137, 137, 0.72);
   }
@@ -84,6 +84,7 @@ body {
       visibility: visible;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+      @extend .menu__link;
       &:hover ~ .menu__item {
         visibility: visible;
       }
@@ -101,10 +102,10 @@ body {
 .slider {
   &__heading {
     text-align: center;
-    @include font('LeagueGothic', 36px, $white);
+    @include font('LeagueGothicRegular', 36px, $white);
     &--small {
       text-align: center;
-      @include font('LeagueGothic', 18px, #edbfff);
+      @include font('LeagueGothicRegular', 18px, #edbfff);
     }
   }
   &__text {
@@ -113,7 +114,7 @@ body {
     max-width: 320px;
     padding: 0 0 116px 40px;
     text-align: justify;
-    @include font('Open Sans Light', 14px);
+    @include font('OpenSansLight', 14px);
   }
   &__phone {
     display: none;
@@ -160,16 +161,16 @@ body {
     }
   }
   &__heading {
-    @include font('LeagueGothic', 24px);
+    @include font('LeagueGothicRegular', 24px);
     font-weight: 400;
     padding-left: 72px;
     text-shadow: 0 1px 20px #0f1518;
   }
   &__text {
     @extend .content__heading;
-    @include font('Open Sans Light', 16px);
+    @include font('OpenSansLight', 16px);
     font-weight: 300;
-    height: 113px;
+    height: 114px;
     width: 100%;
     overflow: hidden;
   }
@@ -177,7 +178,7 @@ body {
     float: right;
     padding-right: 5px;
     text-transform: uppercase;
-    @include font('LeagueGothic', 18px);
+    @include font('LeagueGothicRegular', 18px);
     &:hover {
       text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
     }
@@ -206,7 +207,7 @@ body {
     margin-right: 12px;
   }
   &__heading {
-    @include font('LeagueGothic', 24px, $title);
+    @include font('LeagueGothicRegular', 24px, $title);
     text-transform: uppercase;
     &--small {
       color: #edbfff;
@@ -214,7 +215,7 @@ body {
   }
   &__text {
     padding: 82px 38px 33px 38px;
-    @include font('Open Sans Light', 16px, $title);
+    @include font('OpenSansLight', 16px, $title);
   }
   &__slider {
     display: block;
@@ -226,19 +227,19 @@ body {
 //------------UPDATES SECTION---------//
 
 .updates {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 100px;
   overflow: hidden;
   &__title {
     text-transform: uppercase;
-    @include font('LeagueGothic', 30px, $title);
+    @include font('LeagueGothicRegular', 30px, $title);
   }
   &__more {
     float: right;
     margin: 20px 20px 0 0;
     text-transform: uppercase;
-    @include font('LeagueGothic', 18px, $title);
+    @include font('LeagueGothicRegular', 18px, $title);
     &:hover {
       text-shadow: 0 0 8px #777;
     }
@@ -253,12 +254,12 @@ body {
     margin-right: 17px;
   }
   &__title {
-    @include font('Open Sans Bold', 16px, $title);
+    @include font('OpenSansExtraBold', 16px, $title);
   }
   &__text {
-    @include font('Open Sans Light', 14px, $text);
+    @include font('OpenSansLight', 14px, $text);
     max-width: 200px;
-    max-height: 22px;
+    max-height: 18px;
     overflow: hidden;
   }
 }
@@ -308,11 +309,11 @@ body {
     }
   }
   &__title {
-    @include font('LeagueGothic', 24px, $title);
+    @include font('LeagueGothicRegular', 24px, $title);
     text-transform: uppercase;
     }
   &__text {
-    @include font('Open Sans Light', 16px, $text);
+    @include font('OpenSansLight', 16px, $text);
   }
 }
 

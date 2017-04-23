@@ -17,9 +17,6 @@
     }
     .menu__link {
       border-bottom: none;
-      &--home {
-        text-shadow: 2px 2px $text;
-      }
     }
   }
 }
@@ -68,9 +65,8 @@
   width: 70%;
 }
 .updates-block__text {
-  @include font('Open Sans Light', 14px, $title);
+  @include font('OpenSansLight', 14px, $title);
   max-width: 235px;
-  max-height: 22px;
   overflow: hidden;
 }
 

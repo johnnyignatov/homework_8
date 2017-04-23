@@ -31,10 +31,6 @@ a:hover {
   border-bottom: none;
 }
 
-.menu--footer .menu__link--home {
-  text-shadow: 2px 2px #787878;
-}
-
 .slider {
   margin-top: -225px;
   background: rgba(71, 57, 77, 0.3);
@@ -81,11 +77,10 @@ a:hover {
 }
 
 .updates-block__text {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 14px;
   color: #454545;
   max-width: 235px;
-  max-height: 22px;
   overflow: hidden;
 }
 

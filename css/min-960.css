@@ -37,10 +37,6 @@ a:hover {
   border-bottom: 2px solid #edbfff;
 }
 
-.menu__link--home:hover {
-  border-bottom: 2px solid #edbfff;
-}
-
 .menu--inline .menu__item {
   visibility: visible;
   display: inline;

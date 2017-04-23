@@ -1,14 +1,45 @@
-@font-face {
+/*@font-face {
   font-family: 'LeagueGothic';
   src: url(../fonts/LeagueGothic-Regular.otf) format("opentype");
-}
+}*/
 
-@font-face {
+/*@font-face {
   font-family: 'Open Sans Light';
   src: url(../fonts/OpenSans-Light.ttf);
+}*/
+
+/*@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
+}*/
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url(../fonts/LeagueGothicRegular.eot);
+    src: url(../fonts/LeagueGothic-Regular.otf) format("opentype");
+    src: url(../fonts/LeagueGothicRegular.eot) format('embedded-opentype'),
+         url(../fonts/LeagueGothicRegular.woff2) format('woff2'),
+         url(../fonts/LeagueGothicRegular.woff) format('woff'),
+         url(../fonts/LeagueGothicRegular.ttf) format('truetype'),
+         url(../fonts/LeagueGothicRegular.svg#LeagueGothicRegular) format('svg');
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
-  src: url(../fonts/OpenSans-ExtraBold.ttf);
+    font-family: 'OpenSansExtraBold';
+    src: url(../fonts/OpenSansExtraBold.eot);
+    src: url(../fonts/OpenSansExtraBold.eot) format('embedded-opentype'),
+         url(../fonts/OpenSansExtraBold.woff2) format('woff2'),
+         url(../fonts/OpenSansExtraBold.woff) format('woff'),
+         url(../fonts/OpenSansExtraBold.ttf) format('truetype'),
+         url(../fonts/OpenSansExtraBold.svg#OpenSansExtraBold) format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url(../fonts/OpenSans-Light.ttf);
+    src: url(../fonts/OpenSansLight.eot);
+    src: url(../fonts/OpenSansLight.eot) format('embedded-opentype'),
+         url(../fonts/OpenSansLight.woff2) format('woff2'),
+         url(../fonts/OpenSansLight.woff) format('woff'),
+         url(../fonts/OpenSansLight.svg#OpenSansLight) format('svg');
 }
