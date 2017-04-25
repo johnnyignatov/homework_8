@@ -28,7 +28,7 @@ a:hover {
   padding-top: 60px;
   display: block;
   background: none;
-  width: 100%;
+  width: 99%;
   text-align: center;
   margin-left: 10px;
 }
@@ -49,20 +49,20 @@ a:hover {
 }
 
 .menu--footer {
-  width: 65%;
+  width: 67%;
   padding: 50px 0 0 0;
   text-align: left;
   float: left;
 }
 
 .menu--footer .menu__item {
-  padding: 0 10px 0 0;
+  padding: 0 50px 0 33px;
 }
 
 .slider {
   background: rgba(71, 57, 77, 0.3);
   margin-top: 150px;
-  padding-left: 10px;
+  padding-left: 150px;
 }
 
 .slider__phone {

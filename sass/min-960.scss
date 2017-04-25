@@ -2,7 +2,7 @@
 
 .header {
   background: #fff url(../img/Home_320.jpg) 59% no-repeat;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .logo {
@@ -21,7 +21,7 @@
   padding-top: 60px;
   display: block;
   background: none;
-  width: 100%;
+  width: 99%;
   text-align: center;
   margin-left: 10px;
   &__link {
@@ -41,12 +41,12 @@
     border-bottom: none;
   }
   &--footer {
-    width: 65%;
+    width: 67%;
     padding: 50px 0 0 0;
     text-align: left;
     float: left;
     & .menu__item {
-      padding: 0 10px 0 0;
+      padding: 0 50px 0 33px;
     }
   }
 }
@@ -54,7 +54,7 @@
 .slider {
   background: rgba(71, 57, 77, .3);
   margin-top: 150px;
-  padding-left: 10px;
+  padding-left: 150px;
   &__phone {
     display: block;
     top: 280px;
